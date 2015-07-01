@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FC933AD1B3AD8CC003D0E38 /* PersistenceLayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FC933AC1B3AD8CC003D0E38 /* PersistenceLayer.h */; };
-		7FC933AF1B3AD8CC003D0E38 /* PersistenceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC933AE1B3AD8CC003D0E38 /* PersistenceLayer.m */; };
+		7F680DBE1B3E1E4A0030D138 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F680DBD1B3E1E4A0030D138 /* DBHelper.m */; };
+		7F86D2641B4421B60061E6D6 /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F86D2631B4421B60061E6D6 /* EventsDAO.m */; };
 		7FC933B51B3AD8CD003D0E38 /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC933A91B3AD8CC003D0E38 /* libPersistenceLayer.a */; };
+		7FC9341E1B3AE490003D0E38 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC9341D1B3AE490003D0E38 /* Events.m */; };
+		7FC934211B3AE5D7003D0E38 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC934201B3AE5D7003D0E38 /* Schedule.m */; };
+		7FC96EE11B3C42FF00C05BF7 /* EventsDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC96EE01B3C42FF00C05BF7 /* EventsDAOTests.m */; };
+		7FC96EE41B3C43D600C05BF7 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC96EE31B3C43D600C05BF7 /* BaseDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,18 +33,26 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				7FC933AD1B3AD8CC003D0E38 /* PersistenceLayer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F680DBC1B3E1E4A0030D138 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		7F680DBD1B3E1E4A0030D138 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		7F86D2621B4421B60061E6D6 /* EventsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsDAO.h; path = ../EventsDAO.h; sourceTree = "<group>"; };
+		7F86D2631B4421B60061E6D6 /* EventsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsDAO.m; path = ../EventsDAO.m; sourceTree = "<group>"; };
 		7FC933A91B3AD8CC003D0E38 /* libPersistenceLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPersistenceLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FC933AC1B3AD8CC003D0E38 /* PersistenceLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceLayer.h; sourceTree = "<group>"; };
-		7FC933AE1B3AD8CC003D0E38 /* PersistenceLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceLayer.m; sourceTree = "<group>"; };
 		7FC933B41B3AD8CD003D0E38 /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC933BA1B3AD8CD003D0E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FC9341C1B3AE490003D0E38 /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		7FC9341D1B3AE490003D0E38 /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		7FC9341F1B3AE5D7003D0E38 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		7FC934201B3AE5D7003D0E38 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		7FC96EE01B3C42FF00C05BF7 /* EventsDAOTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDAOTests.m; sourceTree = "<group>"; };
+		7FC96EE21B3C43D600C05BF7 /* BaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		7FC96EE31B3C43D600C05BF7 /* BaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				7FC933AB1B3AD8CC003D0E38 /* PersistenceLayer */,
+				7FC933B91B3AD8CD003D0E38 /* Supporting Files */,
 				7FC933B81B3AD8CD003D0E38 /* PersistenceLayerTests */,
 				7FC933AA1B3AD8CC003D0E38 /* Products */,
 			);
@@ -83,8 +96,16 @@
 		7FC933AB1B3AD8CC003D0E38 /* PersistenceLayer */ = {
 			isa = PBXGroup;
 			children = (
-				7FC933AC1B3AD8CC003D0E38 /* PersistenceLayer.h */,
-				7FC933AE1B3AD8CC003D0E38 /* PersistenceLayer.m */,
+				7F86D2621B4421B60061E6D6 /* EventsDAO.h */,
+				7F86D2631B4421B60061E6D6 /* EventsDAO.m */,
+				7FC96EE21B3C43D600C05BF7 /* BaseDAO.h */,
+				7FC96EE31B3C43D600C05BF7 /* BaseDAO.m */,
+				7F680DBC1B3E1E4A0030D138 /* DBHelper.h */,
+				7F680DBD1B3E1E4A0030D138 /* DBHelper.m */,
+				7FC9341C1B3AE490003D0E38 /* Events.h */,
+				7FC9341D1B3AE490003D0E38 /* Events.m */,
+				7FC9341F1B3AE5D7003D0E38 /* Schedule.h */,
+				7FC934201B3AE5D7003D0E38 /* Schedule.m */,
 			);
 			path = PersistenceLayer;
 			sourceTree = "<group>";
@@ -92,7 +113,7 @@
 		7FC933B81B3AD8CD003D0E38 /* PersistenceLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				7FC933B91B3AD8CD003D0E38 /* Supporting Files */,
+				7FC96EE01B3C42FF00C05BF7 /* EventsDAOTests.m */,
 			);
 			path = PersistenceLayerTests;
 			sourceTree = "<group>";
@@ -103,7 +124,8 @@
 				7FC933BA1B3AD8CD003D0E38 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
+			path = PersistenceLayerTests;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -193,7 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FC933AF1B3AD8CC003D0E38 /* PersistenceLayer.m in Sources */,
+				7FC934211B3AE5D7003D0E38 /* Schedule.m in Sources */,
+				7FC96EE41B3C43D600C05BF7 /* BaseDAO.m in Sources */,
+				7FC9341E1B3AE490003D0E38 /* Events.m in Sources */,
+				7F86D2641B4421B60061E6D6 /* EventsDAO.m in Sources */,
+				7F680DBE1B3E1E4A0030D138 /* DBHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC96EE11B3C42FF00C05BF7 /* EventsDAOTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +323,9 @@
 		7FC933BE1B3AD8CD003D0E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = PersistenceLayer/PrefixHeader.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -305,6 +335,9 @@
 		7FC933BF1B3AD8CD003D0E38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = PersistenceLayer/PrefixHeader.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -362,6 +395,7 @@
 				7FC933BF1B3AD8CD003D0E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FC933C01B3AD8CD003D0E38 /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -370,6 +404,7 @@
 				7FC933C21B3AD8CD003D0E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
